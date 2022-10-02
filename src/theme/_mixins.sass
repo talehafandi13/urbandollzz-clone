@@ -1,0 +1,19 @@
+@mixin button($color: white, $bg: black, $hoverBg: #ec6bc2)
+    width: 100%
+    padding: 16px 0
+    color: $color
+    background-color: $bg
+    border: 1px solid $bg
+    // border-radius: 8px
+    font-size: 14px
+    display: flex
+    justify-content: center
+    font-weight: 500
+    transition: ease-in-out .3s
+
+    &:hover
+        // opacity: .8
+        transition: ease-in-out .3s
+        background-color: $hoverBg
+        border-color: $hoverBg
+        

@@ -1,0 +1,190 @@
+@import '../../theme/_variables'
+
+.home
+    &-banner
+        height: 100vh
+        background-image: url('../../assets/banner.png')
+        background-size: cover
+        background-repeat: no-repeat
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        color: white
+        padding: 20px 30px
+        gap: 8px
+        letter-spacing: 0.04em
+
+        h2
+            font-size: 22px
+            line-height: 22px
+            text-transform: uppercase
+            font-weight: bold
+        h1
+            font-size: 40px
+            line-height: 40px
+            text-transform: uppercase
+            font-weight: bold
+
+        .buttons
+            display: flex
+            gap: 8px
+            button
+                padding: 15px 20px
+                background-color: white
+                font-size: 14px
+                letter-spacing: 0.02em
+                font-weight: bold
+                text-transform: uppercase
+                border: none
+                cursor: pointer
+                &:hover
+                    opacity: .8
+                    transition: .2s
+    .what-we-offer
+        text-align: center
+        padding: 30px 0
+        max-width: 1300px
+        margin: auto
+
+        .offer-title
+            font-size: 24px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            font-weight: bolder
+
+        .offer-card-wrapper
+            display: flex !important
+            justify-content: center
+            // width: 100%
+            padding: 20px 0
+            .offer-card
+                background-color: white
+                padding: 30px 20px
+                display: flex !important
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                text-align: center
+                box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, .1)
+                width: 90%
+                max-width: 220px !important
+                gap: 15px
+                letter-spacing: 0.03em
+
+                img
+                    width: 115px
+                h2
+                    font-size: 18px
+                    line-height: 20px
+                    font-weight: bold
+                p
+                    font-size: 14px
+                    line-height: 16px
+            
+    .quick-tutorial
+        text-align: center
+        padding: 20px
+
+        .quick-tutorial-title
+            font-size: 22px
+            font-weight: 900
+            text-transform: uppercase
+        .mobile-video-container
+            .mobile-video-title
+                font-size: 18px
+                color: $secondaryColor
+                margin: 15px 0
+                span
+                    color: black
+                    text-transform: uppercase
+            .mobile-video-box
+                video
+                    max-width: 350px
+                    border-radius: 30px
+
+        .desktop-video-container
+            display: none
+            justify-content: space-between
+            max-width: 1100px
+            margin: auto
+            gap: 5px
+            .desktop-video-box
+                margin: 0 18px
+                color: $secondaryColor
+                text-transform: uppercase
+                font-weight: 900
+
+                span
+                    color: black
+                video
+                    border-radius: 30px
+                    margin-top: 15px
+    &-reviews
+        padding: 15px
+        letter-spacing: 0.02em
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-width: 1300px
+        margin: auto
+        // align-items: center
+        &-title
+            font-size: 20px
+            font-weight: bolder
+            text-transform: uppercase
+            margin: 15px 0
+        .slick-slide > div
+            display: flex
+            justify-content: center
+    .product-slider
+        padding: 20px 15px
+        max-width: 1300px
+        margin: 15px auto
+        h1
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 22px
+            text-align: center
+            margin-bottom: 15px
+
+        .slick-slide > div
+            display: flex
+            justify-content: center
+
+
+@media( min-width: 768px )
+    .home
+        .what-we-offer
+            .offer-card-wrapper
+                .offer-card
+                    max-width: 320px !important
+
+        .quick-tutorial
+            .mobile-video-container
+                display: none
+
+            .desktop-video-container
+                display: flex
+
+@media( min-width: 992px )
+    .home
+        &-banner
+            justify-content: center
+            line-height: 35px
+
+            h1
+                font-size: 50px
+            h2
+                font-size: 30px
+            .buttons
+                button
+                    padding: 20px 40px
+        .what-we-offer
+            .offer-card-wrapper
+                .offer-card
+                    max-width: 200px !important
+        .product-slider 
+            h1 
+                font-size: 26px
+        
