@@ -6,7 +6,6 @@ import facebook from "../../assets/fb-white.png";
 import youtube from "../../assets/youtube-white.png";
 import pinterest from "../../assets/pinterest-white.png";
 import tiktok from "../../assets/tiktok-white.png";
-import Dropdown from "../Dropdown/Dropdown";
 
 const Footer = () => {
   return (
@@ -35,31 +34,6 @@ const Footer = () => {
         </p>
       </div>
       <div className="footer-links">
-        {/* <Dropdown title="Brands">
-          <li>Login</li>
-          <li>About</li>
-          <li>Lashes</li>
-          <li>Rewards</li>
-          <li>Collab</li>
-          <li>Download Our App</li>
-        </Dropdown>
-
-        <Dropdown title="Help">
-          <li>1on1 Lash Application</li>
-          <li>Video Tutorials</li>
-          <li>Tips & Tricks</li>
-          <li>Reviews</li>
-          <li>Track My Order</li>
-          <li>Help Center</li>
-        </Dropdown>
-
-        <Dropdown title="Legal">
-          <li>Terms of Service</li>
-          <li>Privacy Policy</li>
-          <li>Shipping Policy</li>
-          <li>Refund Policy</li>
-        </Dropdown> */}
-
         <div className="box">
           <h2>Brand</h2>
           <ul>

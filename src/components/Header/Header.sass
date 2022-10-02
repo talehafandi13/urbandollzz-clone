@@ -1,12 +1,26 @@
 @import '../../theme/_variables'
 @import '../../theme/_mixins'
 
+header
+    .slick-next
+        right: 25px
+        z-index: 5
+        color: red
+    .slick-prev
+        left: 25px
+        z-index: 5
+        color: red
+.header-slide
+    background-color: #fadff1
+    padding: 12px
+    text-align: center
+
 nav
     border-bottom: 1px solid $headerBottomLine
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     padding: 15px $paddingX
-    align-items: center
+    align-items: 
 
     .hamburger-button
         background-color: transparent

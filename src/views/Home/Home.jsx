@@ -9,24 +9,7 @@ import ReviewCard from "../../components/ReviewCard/ReviewCard";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import Footer from "../../components/Footer/Footer";
 
-// const getWindowWidth = () => window.innerWidth;
-
 const Home = () => {
-  // let def = 1;
-  // if (getWindowWidth() > 768) def = 2;
-  // else if (getWindowWidth() > 1024) def = 4;
-
-  // const [slideToShow, setSlideToShow] = React.useState(def);
-
-  // const getSlideCount = () => {
-  //   if (window.innerWidth < 768) setSlideToShow(1);
-  //   else if (window.innerWidth < 1024) setSlideToShow(2);
-  //   else setSlideToShow(4);
-  // };
-
-  // window.addEventListener("resize", getSlideCount);
-
-  // console.log(window.innerWidth);
 
   const sliderOptions = {
     dots: true,
@@ -75,58 +58,6 @@ const Home = () => {
             <button>Learn More</button>
           </div>
         </section>
-        {/* <section className="what-we-offer">
-        <h1 className="offer-title">What We Offer</h1>
-        <Slider {...sliderOptions}>
-          <div className="offer-card-wrapper">
-            <div className="offer-card">
-              <img src={Icon} alt="Card Icon" />
-              <h2>Lorem Ipsum</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe, at et a nisi nulla qui animi voluptatibus hic fugit
-                inventore impedit, soluta ratione. Unde.
-              </p>
-            </div>
-          </div>
-
-          <div className="offer-card-wrapper">
-            <div className="offer-card">
-              <img src={Icon} alt="Card Icon" />
-              <h2>Lorem Ipsum</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe, at et a nisi nulla qui animi voluptatibus hic fugit
-                inventore impedit, soluta ratione. Unde.
-              </p>
-            </div>
-          </div>
-
-          <div className="offer-card-wrapper">
-            <div className="offer-card">
-              <img src={Icon} alt="Card Icon" />
-              <h2>Lorem Ipsum</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe, at et a nisi nulla qui animi voluptatibus hic fugit
-                inventore impedit, soluta ratione. Unde.
-              </p>
-            </div>
-          </div>
-
-          <div className="offer-card-wrapper">
-            <div className="offer-card">
-              <img src={Icon} alt="Card Icon" />
-              <h2>Lorem Ipsum</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-                saepe, at et a nisi nulla qui animi voluptatibus hic fugit
-                inventore impedit, soluta ratione. Unde.
-              </p>
-            </div>
-          </div>
-        </Slider>
-      </section> */}
         <section className="what-we-offer">
           <h1 className="offer-title">What We Offer</h1>
           <Slider {...sliderOptions}>
@@ -244,46 +175,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* <section className=""> */}
-        {/* <h1 className="home-reviews-title">Reviews</h1> */}
-        {/* <Slider {...reviewsSliderOps}>
-          <ReviewCard
-            img="https://cdn.shopify.com/s/files/1/0616/8651/3892/files/Mask_Group_24_900x.png?v=1642231066"
-            title="I used to get professional extensions"
-            author="Minerva P."
-            text="I use to get professional extensions for two years. Then I found Urban
-            Doll. I love that I can either keep them on for ten days or just take
-            them off the end of the workday. The lashes are glamourous, have
-            different styles, and are so easy to maintain. I put them on for work
-            and take them off after. They’re so easy to clean! Christmas gift for
-            all my friends."
-          />
-
-          <ReviewCard
-            img="https://cdn.shopify.com/s/files/1/0616/8651/3892/files/Mask_Group_24_900x.png?v=1642231066"
-            title="I used to get professional extensions"
-            author="Minerva P."
-            text="I use to get professional extensions for two years. Then I found Urban
-            Doll. I love that I can either keep them on for ten days or just take
-            them off the end of the workday. The lashes are glamourous, have
-            different styles, and are so easy to maintain. I put them on for work
-            and take them off after. They’re so easy to clean! Christmas gift for
-            all my friends."
-          />
-
-          <ReviewCard
-            img="https://cdn.shopify.com/s/files/1/0616/8651/3892/files/Mask_Group_24_900x.png?v=1642231066"
-            title="I used to get professional extensions"
-            author="Minerva P."
-            text="I use to get professional extensions for two years. Then I found Urban
-            Doll. I love that I can either keep them on for ten days or just take
-            them off the end of the workday. The lashes are glamourous, have
-            different styles, and are so easy to maintain. I put them on for work
-            and take them off after. They’re so easy to clean! Christmas gift for
-            all my friends."
-          />
-        </Slider> */}
-        {/* </section> */}
         <section className="home-reviews">
           <h1 className="home-reviews-title">Reviews</h1>
           <Slider {...reviewsSliderOps}>
@@ -300,41 +191,6 @@ const Home = () => {
               all my friends."
               />
             ))}
-            {/* <ReviewCard
-            img="https://cdn.shopify.com/s/files/1/0616/8651/3892/files/Mask_Group_24_900x.png?v=1642231066"
-            title="I used to get professional extensions"
-            author="Minerva P."
-            text="I use to get professional extensions for two years. Then I found Urban
-            Doll. I love that I can either keep them on for ten days or just take
-            them off the end of the workday. The lashes are glamourous, have
-            different styles, and are so easy to maintain. I put them on for work
-            and take them off after. They’re so easy to clean! Christmas gift for
-            all my friends."
-          />
-
-          <ReviewCard
-            img="https://cdn.shopify.com/s/files/1/0616/8651/3892/files/Mask_Group_24_900x.png?v=1642231066"
-            title="I used to get professional extensions"
-            author="Minerva P."
-            text="I use to get professional extensions for two years. Then I found Urban
-            Doll. I love that I can either keep them on for ten days or just take
-            them off the end of the workday. The lashes are glamourous, have
-            different styles, and are so easy to maintain. I put them on for work
-            and take them off after. They’re so easy to clean! Christmas gift for
-            all my friends."
-          />
-
-          <ReviewCard
-            img="https://cdn.shopify.com/s/files/1/0616/8651/3892/files/Mask_Group_24_900x.png?v=1642231066"
-            title="I used to get professional extensions"
-            author="Minerva P."
-            text="I use to get professional extensions for two years. Then I found Urban
-            Doll. I love that I can either keep them on for ten days or just take
-            them off the end of the workday. The lashes are glamourous, have
-            different styles, and are so easy to maintain. I put them on for work
-            and take them off after. They’re so easy to clean! Christmas gift for
-            all my friends."
-          /> */}
           </Slider>
         </section>
         <section className="product-slider">

@@ -7,8 +7,7 @@ import Cart from "../../assets/cart.svg";
 import Search from "../../assets/search.svg";
 import Close from "../../assets/close.svg";
 import Person from "../../assets/person.png";
-import Dropdown from "../Dropdown/Dropdown";
-// import { useNavigate } from "react-router";
+import Slider from "react-slick";
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -18,12 +17,26 @@ const Header = () => {
       : menuRef?.current?.classList.add("show");
   };
 
+  const settings = {
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true
+
+    // arrows: true,
+  };
 
   return (
     <header>
-      {
-        // slider
-      }
+      <Slider {...settings}>
+        <div className="header-slide">Lorem ipsum dolor sit amet.</div>
+        <div className="header-slide">Lorem ipsum sit dolor amet.</div>
+        <div className="header-slide">Lorem dolor sit amet ipsum.</div>
+        <div className="header-slide">Lorem amet ipsum dolor sit.</div>
+      </Slider>
 
       <nav>
         <button className="hamburger-button" onClick={menuToggle}>
@@ -32,14 +45,10 @@ const Header = () => {
           <div className="line"></div>
         </button>
         <div className="search-bar-desktop">
-              <img src={Search} alt="search icon" />
-              <input type="text" name="search" placeholder="Axtarış..." />
-            </div>
-        <img
-          src={Logo}
-          alt="Urban Dolls"
-          className="brand-logo"
-        />
+          <img src={Search} alt="search icon" />
+          <input type="text" name="search" placeholder="Axtarış..." />
+        </div>
+        <img src={Logo} alt="Urban Dolls" className="brand-logo" />
         <div className="nav-icons">
           <img src={Wishlist} alt="Wishlist" />
           <img src={User} alt="User" />
